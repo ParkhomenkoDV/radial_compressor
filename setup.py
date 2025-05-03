@@ -17,6 +17,6 @@ setup(
     author_email='',
     url='https://github.com/ParkhomenkoDV/radial_compressor.git',
     packages=find_packages(),
-    python_requires='>=3.9',
+    python_requires='>=3.11',
     install_requires=install_requires,
 )
