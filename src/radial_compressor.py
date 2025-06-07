@@ -63,3 +63,6 @@ while True:
 
     dzetta_inlet = None
     if D_: break
+
+if __name__ == '__main__':
+    pass
