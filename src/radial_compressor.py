@@ -14,7 +14,7 @@ class RadialCompressor:
         self.betta2l = betta2l
         self.d1_ = d1_
 
-    def fit(self):
+    def fit(self, rotation_velocity):
         while True:
             c2m_ = c2m0_ * sin(betta2l)  # = c2m/u2
             z_rotor = z_rotor_0 * sin(betta2l)
@@ -81,8 +81,6 @@ def GDF(parameter: str, l):
 def main():
 
     # yellow parameter
-
-    
     c2m0_ = 0.3  # 0.2..0.45
     z_rotor_0 = 20  # 16..38
     alpha_fr = 0.04  # 0.03..0.06
@@ -107,7 +105,7 @@ def main():
     R = 287
     pipi = 3
     rotation_velocity = 12_000
-    c.fit()
+    c.fit(rotation_velocity)
 
 
 if __name__ == "__main__":
